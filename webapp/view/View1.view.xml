@@ -1,0 +1,49 @@
+<mvc:View controllerName="com.app.hello.OData.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m">
+	<App id="idAppControl">
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+
+
+					<!-- vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv -->
+					<!-- vvvvvvvvvvvvv Passen Sie hier die Tabelle an vvvvvvvvvvvvv -->
+					<Table id="productTableId" items="">
+						<headerToolbar>
+							<Toolbar>
+								<Title text="Produkte" level="H2"/>
+							</Toolbar>
+						</headerToolbar>
+						<columns>
+
+							<Column id="ProductName" demandPopin="true">
+								<Text text="name"/>
+							</Column>
+							<Column id="QuantityPerUnit" demandPopin="true">
+								<Text text="Menge pro Einheit"/>
+							</Column>
+							<Column id="UnitPrice" minScreenWidth="Tablet" demandPopin="true">
+								<Text text="Preis"/>
+							</Column>
+							<Column id="UiS" minScreenWidth="Tablet" demandPopin="true">
+								<Text text="Verfügbar"/>
+							</Column>
+						</columns>
+						<items>
+							<ColumnListItem>
+								<cells>
+
+
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+					<!-- ^^^^^^^^^^^^^ Passen Sie hier die Tabelle an ^^^^^^^^^^^^^ -->
+					<!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+					
+					
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
